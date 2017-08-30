@@ -1,0 +1,273 @@
+<ion-content>
+  <ion-fab bottom right>
+    <button ion-fab style="background-color: #044199">社招</button>
+    <ion-fab-list side="top">
+      <button ion-fab (click)="homePage()">公司</button>
+      <button ion-fab (click)="positionPage(!isSchool)">{{positionName}}</button>
+    </ion-fab-list>
+  </ion-fab>
+  <div class="campus-index-page normal-page-wrap s2-page-wrap">
+    <div id="headimgDiv" class="headimg clear">
+      <img src="assets/style/img/processo_selezione_0.jpg" alt="社会招聘" />
+    </div>
+    <div id="topbarDiv" class="topbar">
+      <div class="search-box to" style="margin-left: 20px;margin-right: 20px">
+        <span class="icons i-search fr"></span>
+        <div class="to input-box">
+          <form id="searchForm">
+            <input type="search" class="input-inner" id="searchValue" name="textValue" placeholder="请输入职位关键词(如java 产品)" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="filterDiv" class="set-category-box clear">
+      <ul class="d-box">
+        <li class="flex1 item select-box">
+          <span class="txt bgs bg-arrow-d" id="strDepartment_text">部门</span>
+          <div id="departmentDiv">
+            <select name="strDepartment" id="strDepartment">
+              <option value="">全部</option>
+              <option value="1688&#x4E8B;&#x4E1A;&#x90E8;">1688事业部</option>
+              <option value="B2B">B2B</option>
+              <option value="BBC&#x529E;&#x516C;&#x5BA4;">BBC办公室</option>
+              <option value="CBU">CBU</option>
+              <option value="CEO&#x529E;&#x516C;&#x5BA4;">CEO办公室</option>
+              <option value="CTO">CTO</option>
+              <option value="GOC">GOC</option>
+              <option value="IDC&#x7814;&#x53D1;&#x4E8B;&#x4E1A;&#x90E8;">IDC研发事业部</option>
+
+            </select>
+          </div>
+        </li>
+        <li class="flex1 item select-box">
+          <span class="txt bgs bg-arrow-d" id="positionType_text">类型</span>
+          <div id="pclassDiv">
+            <select name="positionType" id="positionType">
+              <option value="">全部</option>
+              <option value="&#x6D4B;&#x7ED8;&#x7C7B;">测绘类</option>
+              <option value="&#x4EA7;&#x54C1;&#x7C7B;">产品类</option>
+              <option value="&#x6280;&#x672F;&#x7C7B;">技术类</option>
+              <option value="&#x91D1;&#x878D;&#x7C7B;">金融类</option>
+              <option value="&#x5BA2;&#x670D;&#x7C7B;">客服类</option>
+              <option value="&#x8BBE;&#x8BA1;&#x7C7B;">设计类</option>
+              <option value="&#x5E02;&#x573A;&#x62D3;&#x5C55;">市场拓展</option>
+              <option value="&#x6570;&#x636E;&#x7C7B;">数据类</option>
+              <option value="&#x5916;&#x8D38;&#x7C7B;">外贸类</option>
+              <option value="&#x9500;&#x552E;&#x7C7B;">销售类</option>
+              <option value="&#x6E38;&#x620F;&#x7C7B;">游戏类</option>
+              <option value="&#x8FD0;&#x8425;&#x7C7B;">运营类</option>
+              <option value="&#x7EFC;&#x5408;&#x7C7B;">综合类</option>
+            </select>
+          </div>
+        </li>
+        <li class="flex1 item select-box">
+          <span class="txt bgs bg-arrow-d" id="positionCity_text">地点</span>
+          <div id="cityDiv">
+            <select name="positionCity" id="positionCity">
+              <option value="">全部</option>
+              <option value="&#x4FDD;&#x5B9A;&#x5E02;">保定市</option>
+              <option value="&#x5317;&#x4EAC;&#x5E02;">北京市</option>
+              <option value="&#x6CA7;&#x5DDE;&#x5E02;">沧州市</option>
+              <option value="&#x5E38;&#x5DDE;&#x5E02;">常州市</option>
+              <option value="&#x957F;&#x6625;&#x5E02;">长春市</option>
+              <option value="&#x957F;&#x6C99;&#x5E02;">长沙市</option>
+              <option value="&#x6210;&#x90FD;&#x5E02;">成都市</option>
+              <option value="&#x5927;&#x8FDE;&#x5E02;">大连市</option>
+              <option value="&#x4E1C;&#x839E;&#x5E02;">东莞市</option>
+              <option value="&#x4F5B;&#x5C71;&#x5E02;">佛山市</option>
+              <option value="&#x798F;&#x5DDE;&#x5E02;">福州市</option>
+              <option value="&#x961C;&#x9633;&#x5E02;">阜阳市</option>
+              <option value="&#x8D63;&#x5DDE;&#x5E02;">赣州市</option>
+              <option value="&#x9AD8;&#x96C4;&#x5E02;">高雄市</option>
+              <option value="&#x5E7F;&#x5DDE;&#x5E02;">广州市</option>
+              <option value="&#x8D35;&#x9633;&#x5E02;">贵阳市</option>
+              <option value="&#x54C8;&#x5C14;&#x6EE8;&#x5E02;">哈尔滨市</option>
+              <option value="&#x6D77;&#x53E3;&#x5E02;">海口市</option>
+              <option value="&#x6D77;&#x5916;">海外</option>
+              <option value="&#x676D;&#x5DDE;&#x5E02;">杭州市</option>
+              <option value="&#x5408;&#x80A5;&#x5E02;">合肥市</option>
+              <option value="&#x547C;&#x548C;&#x6D69;&#x7279;&#x5E02;">呼和浩特市</option>
+              <option value="&#x6D4E;&#x5357;&#x5E02;">济南市</option>
+              <option value="&#x6D4E;&#x5B81;&#x5E02;">济宁市</option>
+              <option value="&#x6C5F;&#x95E8;&#x5E02;">江门市</option>
+              <option value="&#x91D1;&#x534E;&#x5E02;">金华市</option>
+              <option value="&#x6606;&#x660E;&#x5E02;">昆明市</option>
+              <option value="&#x5170;&#x5DDE;&#x5E02;">兰州市</option>
+              <option value="&#x4E34;&#x6C82;&#x5E02;">临沂市</option>
+              <option value="&#x7F8E;&#x56FD;">美国</option>
+              <option value="&#x5357;&#x660C;&#x5E02;">南昌市</option>
+              <option value="&#x5357;&#x4EAC;&#x5E02;">南京市</option>
+              <option value="&#x5357;&#x5B81;&#x5E02;">南宁市</option>
+              <option value="&#x5357;&#x901A;&#x5E02;">南通市</option>
+              <option value="&#x5B81;&#x6CE2;&#x5E02;">宁波市</option>
+              <option value="&#x9752;&#x5C9B;&#x5E02;">青岛市</option>
+              <option value="&#x6CC9;&#x5DDE;&#x5E02;">泉州市</option>
+              <option value="&#x65E5;&#x7167;&#x5E02;">日照市</option>
+              <option value="&#x4E09;&#x4E9A;&#x5E02;">三亚市</option>
+              <option value="&#x6C55;&#x5934;&#x5E02;">汕头市</option>
+              <option value="&#x4E0A;&#x6D77;&#x5E02;">上海市</option>
+              <option value="&#x7ECD;&#x5174;&#x5E02;">绍兴市</option>
+              <option value="&#x6DF1;&#x5733;&#x5E02;">深圳市</option>
+              <option value="&#x6C88;&#x9633;&#x5E02;">沈阳市</option>
+              <option value="&#x77F3;&#x5BB6;&#x5E84;&#x5E02;">石家庄市</option>
+              <option value="&#x82CF;&#x5DDE;&#x5E02;">苏州市</option>
+              <option value="&#x53F0;&#x5317;&#x5E02;">台北市</option>
+              <option value="&#x53F0;&#x5357;&#x5E02;">台南市</option>
+              <option value="&#x53F0;&#x4E2D;&#x5E02;">台中市</option>
+              <option value="&#x53F0;&#x5DDE;&#x5E02;">台州市</option>
+              <option value="&#x592A;&#x539F;&#x5E02;">太原市</option>
+              <option value="&#x5510;&#x5C71;&#x5E02;">唐山市</option>
+              <option value="&#x5929;&#x6D25;&#x5E02;">天津市</option>
+              <option value="&#x5A01;&#x6D77;&#x5E02;">威海市</option>
+              <option value="&#x6F4D;&#x574A;&#x5E02;">潍坊市</option>
+              <option value="&#x6E29;&#x5DDE;&#x5E02;">温州市</option>
+              <option value="&#x6B66;&#x6C49;&#x5E02;">武汉市</option>
+              <option value="&#x897F;&#x5B89;&#x5E02;">西安市</option>
+              <option value="&#x53A6;&#x95E8;&#x5E02;">厦门市</option>
+              <option value="&#x9999;&#x6E2F;&#x5C9B;">香港岛</option>
+              <option value="&#x6E58;&#x6F6D;&#x5E02;">湘潭市</option>
+              <option value="&#x65B0;&#x52A0;&#x5761;">新加坡</option>
+              <option value="&#x70DF;&#x53F0;&#x5E02;">烟台市</option>
+              <option value="&#x626C;&#x5DDE;&#x5E02;">扬州市</option>
+              <option value="&#x90D1;&#x5DDE;&#x5E02;">郑州市</option>
+              <option value="&#x4E2D;&#x5C71;&#x5E02;">中山市</option>
+              <option value="&#x91CD;&#x5E86;&#x5E02;">重庆市</option>
+              <option value="&#x73E0;&#x6D77;&#x5E02;">珠海市</option>
+              <option value="&#x6DC4;&#x535A;&#x5E02;">淄博市</option>
+            </select>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+  <div  class="social-job-list">
+    <dl class="social-job-content">
+      <dd class="category fr c-pm">市场拓展</dd>
+      <dt class="title"><a (click)="detailPage(1)">Hardware Engineer 硬件工程师</a></dt>
+      <dd class="info clear">
+        <span class="time fr">2017-08-15</span>
+        <div class="to fl area"><span class="icons i-area vm"></span><span class="txt vm">上海</span></div>
+        <div class="to pm"><span class="icons i-pm vm"></span><span class="txt vm">产品部</span></div>
+      </dd>
+    </dl>
+
+    <dl class="social-job-content">
+      <dd class="category fr c-pm">技术类</dd>
+      <dt class="title"><a href="javascript:void(0);">Software Engineer 软件工程师</a></dt>
+      <dd class="info clear">
+        <span class="time fr">2017-08-15</span>
+        <div class="to fl area"><span class="icons i-area vm"></span><span class="txt vm" >上海</span></div>
+        <div class="to pm"><span class="icons i-pm vm"></span><span class="txt vm">产品部</span></div>
+      </dd>
+    </dl>
+
+
+
+
+    <dl class="social-job-content">
+      <dd class="category fr c-pm">技术类</dd>
+      <dt class="title"><a href="javascript:void(0);">前端开发-数据平台&amp;产品</a></dt>
+      <dd class="info clear">
+        <span class="time fr">2017-08-15</span>
+        <div class="to fl area"><span class="icons i-area vm"></span><span class="txt vm" id="jobAddress">杭州市、北京市</span></div>
+        <div class="to pm"><span class="icons i-pm vm"></span><span class="txt vm">事业群</span></div>
+      </dd>
+    </dl>
+
+    <dl class="social-job-content">
+      <dd class="category fr c-pm">技术类</dd>
+      <dt class="title"><a href="javascript:void(0);">架构治理专家</a></dt>
+      <dd class="info clear">
+        <span class="time fr">2017-08-15</span>
+        <div class="to fl area"><span class="icons i-area vm"></span><span class="txt vm" >杭州市</span></div>
+        <div class="to pm"><span class="icons i-pm vm"></span><span class="txt vm">技术部</span></div>
+      </dd>
+    </dl>
+
+    <dl class="social-job-content">
+      <dd class="category fr c-pm">产品类</dd>
+      <dt class="title"><a href="javascript:void(0);">高级产品经理</a></dt>
+      <dd class="info clear">
+        <span class="time fr">2017-08-15</span>
+        <div class="to fl area"><span class="icons i-area vm"></span><span class="txt vm" >杭州市</span></div>
+        <div class="to pm"><span class="icons i-pm vm"></span><span class="txt vm">技术部</span></div>
+      </dd>
+    </dl>
+
+    <dl class="social-job-content">
+      <dd class="category fr c-pm">综合类</dd>
+      <dt class="title"><a href="javascript:void(0);">政府事务解决方案专家</a></dt>
+      <dd class="info clear">
+        <span class="time fr">2017-08-15</span>
+        <div class="to fl area"><span class="icons i-area vm"></span><span class="txt vm">北京市</span></div>
+        <div class="to pm"><span class="icons i-pm vm"></span><span class="txt vm">事业群</span></div>
+      </dd>
+    </dl>
+
+    <dl class="social-job-content">
+      <dd class="category fr c-pm">外贸类</dd>
+      <dt class="title"><a href="javascript:void(0);">高级产品策略专家</a></dt>
+      <dd class="info clear">
+        <span class="time fr">2017-08-15</span>
+        <div class="to fl area"><span class="icons i-area vm"></span><span class="txt vm">杭州市</span></div>
+        <div class="to pm"><span class="icons i-pm vm"></span><span class="txt vm">国际事业部</span></div>
+      </dd>
+    </dl>
+
+    <dl class="social-job-content">
+      <dd class="category fr c-pm">外贸类</dd>
+      <dt class="title"><a href="javascript:void(0);">高级供应链运营专家</a></dt>
+      <dd class="info clear">
+        <span class="time fr">2017-08-15</span>
+        <div class="to fl area"><span class="icons i-area vm"></span><span class="txt vm" >杭州市</span></div>
+        <div class="to pm"><span class="icons i-pm vm"></span><span class="txt vm">国际事业部</span></div>
+      </dd>
+    </dl>
+
+    <dl class="social-job-content">
+      <dd class="category fr c-pm">外贸类</dd>
+      <dt class="title"><a href="javascript:void(0);">高级产品运营专家</a></dt>
+      <dd class="info clear">
+        <span class="time fr">2017-08-15</span>
+        <div class="to fl area"><span class="icons i-area vm"></span><span class="txt vm" >杭州市</span></div>
+        <div class="to pm"><span class="icons i-pm vm"></span><span class="txt vm">国际事业部</span></div>
+      </dd>
+    </dl>
+
+    <dl class="social-job-content">
+      <dd class="category fr c-pm">技术类</dd>
+      <dt class="title"><a href="javascript:void(0);">java技术专家/高级开发工程师</a></dt>
+      <dd class="info clear">
+        <span class="time fr">2017-08-15</span>
+        <div class="to fl area"><span class="icons i-area vm"></span><span class="txt vm" >杭州市</span></div>
+        <div class="to pm"><span class="icons i-pm vm"></span><span class="txt vm">技术部</span></div>
+      </dd>
+    </dl>
+
+
+
+    <dl class="social-job-content">
+      <dd class="category fr c-pm">技术类</dd>
+      <dt class="title"><a href="javascript:void(0);">商业合作专家-飞天解决方案</a></dt>
+      <dd class="info clear">
+        <span class="time fr">2017-08-15</span>
+        <div class="to fl area"><span class="icons i-area vm"></span><span class="txt vm" >杭州市、北京市</span></div>
+        <div class="to pm"><span class="icons i-pm vm"></span><span class="txt vm">事业群</span></div>
+      </dd>
+    </dl>
+
+    <dl class="social-job-content">
+      <dd class="category fr c-pm">技术类</dd>
+      <dt class="title"><a href="javascript:void(0);">信息平台-业务架构师</a></dt>
+      <dd class="info clear">
+        <span class="time fr">2017-08-15</span>
+        <div class="to fl area"><span class="icons i-area vm"></span><span class="txt vm" >杭州市</span></div>
+        <div class="to pm"><span class="icons i-pm vm"></span><span class="txt vm">信息平台事业部</span></div>
+      </dd>
+    </dl>
+
+  </div>
+  <div class="g-footer-padding"></div>
+</ion-content>
+

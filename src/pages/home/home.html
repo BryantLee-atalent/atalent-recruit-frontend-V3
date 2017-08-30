@@ -1,14 +1,181 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+<ion-content>
+  <input id="share-title" value="关于马瑞利, 你想知道的都在这里" type="hidden"/>
+  <input id="share-desc" value="这可能是你人生的下一站! 看清企业全局, 然后定位自己" type="hidden"/>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <!-- this fab is placed at bottom right -->
+  <ion-fab bottom right>
+    <button ion-fab style="background-color: #044199">公司</button>
+    <ion-fab-list side="top">
+      <button ion-fab (click)="postionPage(false)">社招</button>
+      <button ion-fab (click)="postionPage(true)">校招</button>
+    </ion-fab-list>
+  </ion-fab>
+  <div class="g-container">
+    <div>
+      <div class="company-profile" style="border-radius: 1px; border-bottom: 1px solid white;">
+        <div class="g-card profile-header">
+          <div class="header-section banner"><i data-src="assets/style/img/processo_selezione_0.jpg"
+                                                class="banner-image lazy-loaded"
+                                                style="background-image: url(assets/style/img/processo_selezione_0.jpg);"></i>
+          </div>
+          <div class="header-section header-main">
+            <div class="header-icon">
+              <img data-src="assets/style/img/1.png" class="header-icon-image lazy-loaded" src="assets/style/img/1.png"/>
+            </div>
+            <div class="header-info">
+              <div class="template-company">
+                <h3 class="g-oneline-text g-theme-color-2 info-title">马瑞利</h3>
+                <div class="description"><span>"</span>以科技为导向,追求卓越<span>"</span></div>
+                <div class="action">
+                  <button ion-button color="light" class=" social-btn first-btn ">
+                    关注
+                  </button>
+                  <!--&lt;!&ndash;&ndash;&gt;-->
+                  <button ion-button class="g-theme-bg-2 g-theme-border-2 social-btn">热招职位</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <div data-tpl-type="2">
+            <div class="g-card">
+              <div class="template-card">
+                <div class="template-figure gm-card">
+                  <div class="gm-card-offset g-theme-color-2">
+                    <figure class="figure">
+                      <div class="g-break-text">
+                        <h4>马瑞利全球</h4>
+                      </div>
+                      <!--&lt;!&ndash;&ndash;&gt;-->
+                      <div class="g-flex">
+                        <div class="g-column g-theme-color-2">
+                          <p style="line-height: normal">
+                            马瑞利是 1919 年创立于意大利的一家全球性公司，公司致力于设计和生产用于汽车领域的高科技系统和部件，公司总部位于意大利（米兰市科尔贝塔）。
+
+                            公司2016 年营业额为 79 亿欧元，拥有约 4.3 万名员工，86 个生产基地，14 个研发中心和，集团在19
+                            个国家（意大利、法国、德国、西班牙、波兰、捷克共和国、俄罗斯、塞尔维亚、斯洛伐克共和国、土耳其、美国、墨西哥、巴西、阿根廷、中国、韩国、日本、印度、马来西亚）设有分支机构。
+                            马瑞利为欧洲、北美和南美州以及亚洲的所有主要汽车制造商供货 。
+                          </p>
+                        </div>
+                      </div>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-tpl-type="2">
+            <div class="g-card">
+              <div class="template-card">
+                <div class="template-figure gm-card">
+                  <div class="gm-card-offset">
+                    <figure class="figure g-theme-color-2">
+                      <div class="g-break-text">
+                        <h4>马瑞利在中国</h4>
+                      </div>
+                      <!--&lt;!&ndash;&ndash;&gt;-->
+                      <div class="g-flex">
+                        <div class="g-column">
+                          <p style="line-height: normal">
+                            自1996年，马瑞利进驻中国开始，一积极参与着中国汽车工业的发展，不断地扩大其在中国的业务与合作范围。现马瑞利在上海，芜湖，广州，佛山，长沙，杭州，长春，南沙，合肥，孝感等城市共计有14家工厂和研发工程中心（包括合资公司在内），约有中国雇员4000人。主要客户有菲亚特，大众，奥迪，标致雪铁龙等跨国车企，以及国内的奇瑞、上汽、一汽、金杯等国产整车品牌。
+                          </p>
+                        </div>
+                      </div>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-tpl-type="1">
+            <div class="g-card">
+              <div class="template-card">
+                <div class="template-complex gm-card">
+                  <div class="gm-card-offset">
+                    <div class="gm-card-header">
+                      <div class="g-break-text g-theme-color-2">
+                        <h4>马瑞利印象</h4>
+                      </div>
+                    </div>
+                    <ion-slides pager>
+                      <ion-slide>
+                        <i data-src="assets/style/img/history1_0.jpg"
+                           class="ref-slide-image slide-image img0 lazy-loaded"
+                           style="background-image: url(assets/style/img/history1_0.jpg?imageMogr2/thumbnail/672x312);"></i>
+                      </ion-slide>
+                      <ion-slide>
+                        <i data-src="assets/style/img/history2.jpg?imageMogr2/thumbnail/672x312"
+                           class="ref-slide-image slide-image img1 lazy-loaded"
+                           style="background-image: url(assets/style/img/history2.jpg?imageMogr2/thumbnail/672x312);"></i>
+
+                      </ion-slide>
+                      <ion-slide>
+                        <i data-src="assets/style/img/history3.jpg?imageMogr2/thumbnail/672x312"
+                           class="ref-slide-image slide-image img2 lazy-loaded"
+                           style="background-image: url(assets/style/img/history3.jpg?imageMogr2/thumbnail/672x312);"></i>
+
+                      </ion-slide>
+                      <ion-slide>
+                        <i data-src="assets/style/img/history5.jpg?imageMogr2/thumbnail/672x312"
+                           class="ref-slide-image slide-image img3 lazy-loaded"
+                           style="background-image: url(assets/style/img/history5.jpg?imageMogr2/thumbnail/672x312);"></i>
+                      </ion-slide>
+                      <ion-slide>
+                        <i data-src="assets/style/img/history7_0.jpg?imageMogr2/thumbnail/672x312"
+                           class="ref-slide-image slide-image img4 lazy-loaded"
+                           style="background-image: url(assets/style/img/history7_0.jpg?imageMogr2/thumbnail/672x312);"></i>
+                      </ion-slide>
+                      <ion-slide>
+                        <i data-src="assets/style/img/history8.jpg?imageMogr2/thumbnail/672x312"
+                           class="ref-slide-image slide-image img5 lazy-loaded"
+                           style="background-image: url(assets/style/img/history8.jpg?imageMogr2/thumbnail/672x312);"></i>
+                      </ion-slide>
+                    </ion-slides>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-tpl-type="5">
+            <div class="g-card">
+              <div class="template-card" onclick="window.open('http://www.magnetimarelli.com.cn/company', '_self')">
+                <div class="template-survey wider gm-card">
+                  <div class="g-flex template-survey-bg g-theme-bg-1 survey-bg">
+                    <div class="g-column">
+                      <button ion-button light style="border-color: white; background-color: #044199">还想了解更多该企业信息?</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-tpl-type="51">
+            <div class="g-card">
+              <div class="template-card">
+                <div class="wider">
+                  <div class="qx-qrcode-bg g-flex g-square-image g-theme-bg-1">
+                    <img data-src="assets/style/img/MarelliQR.jpg" alt="qrcode" class="qx-qrcode lazy-loaded"
+                         src="assets/style/img/MarelliQR.jpg"/>
+                    <div class="qx-qrcode-text"><span class="qx-qrcode-zhiwen">
+              长按关注马瑞利<img data-src="assets/style/img/icon-zhiwen.png" alt="" class="zhiwen lazy-loaded"
+                          src="assets/style/img/icon-zhiwen.png"/></span></div>
+                    <!--</div>-->
+                    <!--</div>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="g-footer-padding"></div>
+
+  <div class="g-atalnet-seal">
+    <p class="s-line">Powered by aTalent</p>
+    <p class="s-heart s-line g-icon-love g-icon">:)</p>
+  </div>
 </ion-content>

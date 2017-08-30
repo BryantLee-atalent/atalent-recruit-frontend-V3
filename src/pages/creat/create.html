@@ -1,0 +1,171 @@
+<ion-content>
+  <div class="resume-page normal-page-wrap s2-page-wrap" style="min-height: 584px; opacity: 1;background-color: #c9cfd0">
+    <div class="resume-header">
+      <div class="top-guide">
+
+
+        <div class="p-title "><span class="txt to">创建简历</span></div>
+      </div>
+      <dl class="avatar-box">
+        <dt class="avatar"><img id="photoImg" src="assets/style/img/logo1.png" alt=""></dt>
+        <input id="photoHid" type="hidden" name="photo" value="">
+
+      </dl>
+    </div>
+    <div id="resumeDiv" class="form-normal-wrap">
+
+      <div class="form-module form-module-show">
+        <h4 class="form-name">应聘信息</h4>
+        <dl class="form-item form-s-h">
+          <dt class="title">职位：</dt>
+          <dd id="positionNameDd" class="content">aTalent-C#工程师-上海</dd>
+        </dl>
+        <dl class="form-item form-s-h">
+          <dt class="title">部门：</dt>
+          <dd id="departmentDd" class="content">aTalent研发部</dd>
+        </dl>
+      </div>
+
+      <form action="/social/deliver" method="post" name="resumeForm" id="resumeForm">
+
+        <input type="hidden" name="perfect" value="yes" id="perfect">
+        <input type="hidden" name="pid" value="234276" id="pid">
+        <input type="hidden" name="pCode" value="NNXikXtASOGIrB0hw07unQ%3D%3D" id="pCode">
+
+
+        <div class="form-module">
+          <h4 class="form-name">
+            填写个人信息
+          </h4>
+          <dl class="form-item form-s-h">
+            <dt class="title">姓名</dt>
+            <dd class="content">
+              <div class="input-box to">
+                <input id="name" type="text" name="name" class="input-inner" value="" validate="yes" vempty="yes" vemptyclip="请输入姓名！">
+              </div>
+            </dd>
+          </dl>
+          <dl class="form-item form-s-h">
+            <dt class="title">手机</dt>
+            <dd class="content">
+              <div class="input-box to">
+                <input id="mobile" type="text" name="mobile" class="input-inner" value="" validate="yes" vempty="yes" vemptyclip="请输入手机号" vmobile="yes" vmobileclip="手机号码错误！">
+              </div>
+            </dd>
+          </dl>
+          <dl class="form-item form-s-h">
+            <dt class="title">邮箱</dt>
+            <dd class="content">
+              <div class="input-box to">
+                <input id="email" type="text" name="email" class="input-inner" value="" validate="yes" vempty="yes" vemptyclip="请输入邮箱账号！" vemail="yes" vemailclip="邮箱格式错误！">
+              </div>
+            </dd>
+          </dl>
+        </div>
+        <div class="form-module">
+          <h4 class="form-name">最近一段工作经历</h4>
+          <dl class="form-item form-s-h">
+            <dt class="title">开始时间</dt>
+            <dd class="content">
+              <div class="input-box to">
+                <input id="workStartDate" type="text" name="workStartDate" class="input-inner" readonly="" value="" validate="yes" vempty="yes" vemptyclip="请选择工作开始时间！" targetid="workEndDate" compare="less" targetclip="工作开始时间不得晚于结束时间！">
+              </div>
+            </dd>
+          </dl>
+          <dl class="form-item form-s-h">
+            <dt class="title">结束时间</dt>
+            <dd class="content">
+              <div class="input-box to">
+                <input id="workEndDate" type="text" name="workEndDate" class="input-inner" readonly="" value="" targetid="workStartDate" compare="greater" targetclip="工作结束时间不得早于开始时间！">
+              </div>
+            </dd>
+          </dl>
+          <dl class="form-item form-s-h">
+            <dt class="title">企业名称</dt>
+            <dd class="content">
+              <div class="input-box to">
+                <input id="workCompany" type="text" name="company" class="input-inner" value="" validate="yes" vempty="yes" vemptyclip="请填写企业名称！">
+              </div>
+            </dd>
+          </dl>
+          <dl class="form-item form-s-h">
+            <dt class="title">职位名称</dt>
+            <dd class="content">
+              <div class="input-box to">
+                <input id="workPosition" type="text" name="position" class="input-inner" value="" validate="yes" vempty="yes" vemptyclip="请填写职位名称！">
+              </div>
+            </dd>
+          </dl>
+          <dl class="form-item form-s-v">
+            <dt class="title">工作描述</dt>
+            <dd class="content">
+              <div class="input-box to">
+                <textarea id="workDesc" name="workDesc" cols="30" rows="10" class="input-inner input-text" placeholder="请在此处添加您此段工作经历的描述" validate="yes" vempty="yes" vemptyclip="请填写工作描述！"></textarea>
+              </div>
+            </dd>
+          </dl>
+        </div>
+
+        <div class="form-module">
+          <h4 class="form-name">最高教育经历</h4>
+          <dl class="form-item form-s-h">
+            <dt class="title">学校</dt>
+            <dd class="content">
+              <div class="input-box to">
+                <input id="eduSchool" type="text" name="school" class="input-inner" value="" validate="yes" vempty="yes" vemptyclip="请填写学校！">
+              </div>
+            </dd>
+          </dl>
+          <dl class="form-item form-s-h">
+            <dt class="title">专业</dt>
+            <dd class="content">
+              <div class="input-box to">
+                <input id="eduMajor" type="text" name="major" class="input-inner" value="" validate="yes" vempty="yes" vemptyclip="请填写专业！">
+              </div>
+            </dd>
+          </dl>
+          <dl class="form-item form-s-h">
+            <dt class="title">开始时间</dt>
+            <dd class="content">
+              <div class="input-box to">
+                <input id="eduStartDate" type="text" name="eduStartDate" class="input-inner" readonly="" value="" validate="yes" vempty="yes" vemptyclip="请填写最高学历的开始时间！" targetid="eduEndDate" compare="less" targetclip="教育开始时间不得晚于结束时间！">
+              </div>
+            </dd>
+          </dl>
+          <dl class="form-item form-s-h">
+            <dt class="title">结束时间</dt>
+            <dd class="content">
+              <div class="input-box to">
+                <input id="eduEndDate" type="text" name="eduEndDate" class="input-inner" readonly="" value="" targetid="eduStartDate" compare="greater" targetclip="教育结束时间不得早于开始时间！">
+              </div>
+            </dd>
+          </dl>
+          <dl class="form-item form-s-h">
+            <dt class="title">学历</dt>
+            <dd class="content">
+              <div class="select-box">
+                <span id="eduDegreeSpan" class=" bgs bg-arrow-r txt">请选择学历</span>
+                <input id="eduDegreeHid" type="hidden" name="degree" value="" validate="yes" vempty="yes" vemptyclip="请选择学历！">
+                <select id="eduDegreeSelect">
+                  <option value="">请选择学历</option>
+                  <option value="high_school">高中</option>
+                  <option value="polytechnic_school">中专</option>
+                  <option value="college">大专</option>
+                  <option value="bachelor">本科</option>
+                  <option value="master">硕士</option>
+                  <option value="doctorate">博士</option>
+                  <option value="postdoctor">博士后</option>
+                  <option value="other">其他</option>
+                  <option value="college2">专科</option>
+                </select>
+              </div>
+            </dd>
+          </dl>
+        </div>
+      </form>
+    </div>
+    <a id="btnSubmit" href="javascript:void(0);" class="btn btn-s3">
+      <span class="txt">提交</span>
+    </a>
+  </div>
+</ion-content>
