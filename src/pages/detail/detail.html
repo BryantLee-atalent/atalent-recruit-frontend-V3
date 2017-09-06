@@ -1,31 +1,47 @@
 <ion-content>
-  <div class="job-detail-page normal-page-wrap s2-page-wrap" style="min-height: 497px; opacity: 1;">
+  <div *ngIf="index === 1" class="job-detail-page normal-page-wrap s2-page-wrap" style="min-height: 497px; opacity: 1;">
     <div class="job-detail-wrap">
       <div class="module-job-info">
-        <span class="title" id="positionName">C#工程师招募</span>
-        <span class="pm" id="typeDiv">技术类</span>
+        <span class="title" id="positionName">Hardware Engineer 硬件工程师</span>
+        <span class="pm" id="typeDiv">上海</span>
         <div class="info clear">
           <span class="time fr" id="startDateDiv"></span>
           <div class="to">
-            <div class="fl vm"><span class="icons i-pm vm"></span><span class="txt vm" id="strDepartment">产品研发部</span></div>
+            <div class="fl vm"><span class="icons i-pm vm"></span><span class="txt vm" id="strDepartment">产品部</span></div>
           </div>
         </div>
       </div>
       <dl class="module-desc">
-        <dt class="title bgs bg-jd">职位描述</dt>
+        <dt class="title bgs bg-jd">专业要求</dt>
         <dd class="content">
-          <div id="contentDiv">1.负责官方网站流量规划及日常运营工作的落地 <br>2.依据行业、品牌、商品特性运营需求，对数据统计、效果跟踪进行规划和设计 <br>3. 数据敏感度高，通过数据分析，进行规划及进行日常优化，并提出可落地的有效方案，提高商户的商业流量覆盖及商户的付费流量运营能力 <br>4.抽提店铺流量运营的方法论，沉淀运营方案。协同多流量通道，提高品牌客户的流量引入量及流量效能提升</div>
+          <div id="contentDiv">Electrical Electronic related 电子电气工程相关专业</div>
         </dd>
       </dl>
       <dl class="module-desc">
-        <dt class="title bgs bg-jr">职位要求</dt>
+        <dt class="title bgs bg-jr">工作职责</dt>
         <dd class="content">
-          <div>1.具备较强的产品意识、数据化思维、抽象化思维 ，对数据敏感，了解底层数据与前台用户场景的关联，能够运用数据对运营场景的规划及日常落地进行判断 <br>2.对广告行业有一定的了解及认知，熟悉流量变现的基础理论。有2年及以上广告行业从业经验 <br>3.良好的项目管理能力，沟通及沉淀能力。独立承担过大型项目，并有良好的抗压能力和沟通协同力 <br>4.对跨境业务有一定的认知及兴趣 <br>5.学习能力强，能够快速掌握店铺运营的核心要素</div>
+          <div>
+            1. Ensure HW delivery in time according to the milestone by project leader.<br/>
+            2. Interface to customer about HW solution proposal and technical analysis.<br/>
+            3. Be responsible for the local development of hardware electronics, including customers requirement analysis/documents fill out, wiring harness solution, schematic design/simulation, BOM creation.<br/>
+            4. Support layout designer for the PCB design, especially EMC optimization.<br/>
+            5. Provide support about validation failure analysis.<br/>
+            6. Provide support to Production during prototype build.<br/>
+            7. Be Involved into Product Design FMEA together with Quality Dept.<br/>
+            8. Support Quality Dept about customer complain and failure component analysis.</div>
         </dd>
       </dl>
       <dl class="module-desc">
-        <dt class="title bgs bg-oc">工作地点</dt>
-        <dd class="content" id="jobWorkLocation">上海市</dd>
+        <dt class="title bgs bg-oc">任职要求</dt>
+        <dd class="content" id="jobWorkLocation">
+          1. Bachelor’s degree or above, major in Electronic Engineering or related.<br/>
+          2. Experience in design of analogue and digital electronic circuit for control board with microcontroller architecture for automotive applications.<br/>
+          3. High proficiency in the use of CAD tools for the design (Orcad, Cadence) and the simulation of electrical circuits (Spice).<br/>
+          4. Knowledge of techniques for electrical design and lay-out aimed at EMC robustness of the product.<br/>
+          5. Experience in laboratory measurement and verification of characteristics of an electronic control circuit.<br/>
+          6. Development experience for ECU, TCU and related sensors is preferred.<br/>
+          7. Knowledge of electronics for driving solenoid valves, dc motor, DC/DC switching regulator is welcome
+          </dd>
       </dl>
       <div id="relevantPositionDiv" class="module-recommend-jobs" style="display: none;">
         <h4 class="m-title ">相关职位推荐</h4>
@@ -41,7 +57,68 @@
           <span class="icons i-deliver"></span>
           <span class="txt">立即申请</span>
         </a>
-        <a id="btnShare" href="javascript:void(0);" class="btn btn-s2 flex1">
+        <a id="btnShare"  class="btn btn-s2 flex1">
+          <span class="icons i-share"></span>
+          <span class="txt">转发</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="index === 2" class="job-detail-page normal-page-wrap s2-page-wrap" style="min-height: 497px; opacity: 1;">
+    <div class="job-detail-wrap">
+      <div class="module-job-info">
+        <span class="title" id="positionName">Hardware Engineer 硬件工程师</span>
+        <span class="pm" id="typeDiv">上海</span>
+        <div class="info clear">
+          <span class="time fr" id="startDateDiv"></span>
+          <div class="to">
+            <div class="fl vm"><span class="icons i-pm vm"></span><span class="txt vm" id="strDepartment">产品部</span></div>
+          </div>
+        </div>
+      </div>
+      <dl class="module-desc">
+        <dt class="title bgs bg-jd">专业要求</dt>
+        <dd class="content">
+          <div id="contentDiv">Computer Science/Automotive electric related 计算机/汽车电子相关专业</div>
+        </dd>
+      </dl>
+      <dl class="module-desc">
+        <dt class="title bgs bg-jr">工作职责</dt>
+        <dd class="content">
+          <div>
+            1.Design and implement model-based software modules to control the engine.<br/>
+            2.Manage the documentation of sw modules and project<br/>
+            3.Validate and trace the verification activity with Model/Software-in-the-loop comparison and produce test reports<br/>
+            4.Integrate the software modules inside the software project<br/>
+            5.Test, monitor and report the software performances<br/>
+            6.Follow the company development flow and quality issues of projects
+          </div>
+        </dd>
+      </dl>
+      <dl class="module-desc">
+        <dt class="title bgs bg-oc">任职要求</dt>
+        <dd class="content" id="jobWorkLocation">
+          1. Bachelor or above preferred in Computer Science, Information Technology or Electronics;<br/>
+          2. Be familiar with software programming, C-Language, Matlab, software architecture, real time operating systems;<br/>
+          3. Good PC skills especially for MS-Office software;<br/>
+          4. Good command of English language in both spoken and written
+        </dd>
+      </dl>
+      <div id="relevantPositionDiv" class="module-recommend-jobs" style="display: none;">
+        <h4 class="m-title ">相关职位推荐</h4>
+        <div class="social-job-list" id="recommendDiv">
+
+        </div>
+      </div>
+
+    </div>
+    <div class="fix-footer">
+      <div class="btnbox d-box">
+        <a id="applyBtn" (click)="applyPage()" class="btn flex2" >
+          <span class="icons i-deliver"></span>
+          <span class="txt">立即申请</span>
+        </a>
+        <a id="btnShare"  class="btn btn-s2 flex1">
           <span class="icons i-share"></span>
           <span class="txt">转发</span>
         </a>

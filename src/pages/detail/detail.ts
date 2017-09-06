@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {NavController} from 'ionic-angular';
+import {NavController, NavParams} from 'ionic-angular';
 
 import {ApplyPage} from '../apply/apply';
 
@@ -8,9 +8,10 @@ import {ApplyPage} from '../apply/apply';
   templateUrl: 'detail.html'
 })
 export class DetailPage {
+  index = 1;
 
-  constructor(public navCtrl: NavController) {
-
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.index = navParams.get('index');
   }
 
   applyPage() {

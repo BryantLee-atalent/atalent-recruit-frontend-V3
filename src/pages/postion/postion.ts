@@ -10,10 +10,9 @@ import {DetailPage} from '../detail/detail';
 export class Postion {
   isSchool: boolean;
   positionName = this.isSchool ? '校招' : '社招';
-
+  btnName = !this.isSchool ? '校招' : '社招';
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.isSchool = this.navParams.get('isSchool');
-    console.log(this.isSchool);
   }
 
   homePage() {
@@ -23,6 +22,8 @@ export class Postion {
 
   positionPage(isSchool: boolean) {
     this.isSchool = isSchool;
+    this.positionName = this.isSchool ? '校招' : '社招';
+    this.btnName = !this.isSchool ? '校招' : '社招';
   }
 
   detailPage(index: number) {
