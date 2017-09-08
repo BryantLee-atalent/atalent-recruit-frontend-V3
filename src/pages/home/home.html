@@ -3,9 +3,9 @@
   <input id="share-desc" value="这可能是你人生的下一站! 看清企业全局, 然后定位自己" type="hidden"/>
 
   <!-- this fab is placed at bottom right -->
-  <ion-fab bottom right>
-    <button ion-fab style="background-color: #044199">公司</button>
-    <ion-fab-list side="top">
+  <ion-fab right middle>
+    <button ion-fab style="background-color: #044199;border: 2px solid #e3e4e6;">公司</button>
+    <ion-fab-list side="left">
       <button ion-fab (click)="postionPage(false)">社招</button>
       <button ion-fab (click)="postionPage(true)">校招</button>
     </ion-fab-list>
@@ -14,18 +14,16 @@
     <div>
       <div class="company-profile" style="border-radius: 1px; border-bottom: 1px solid white;">
         <div class="g-card profile-header">
-          <div class="header-section banner"><i data-src="assets/style/img/processo_selezione_0.jpg"
-                                                class="banner-image lazy-loaded"
-                                                style="background-image: url(assets/style/img/processo_selezione_0.jpg);"></i>
+          <div class="header-section banner"><i data-src="assets/style/img/processo_selezione_0.jpg" class="banner-image lazy-loaded" style="background-image: url(assets/style/img/processo_selezione_0.jpg);"></i>
           </div>
           <div class="header-section header-main">
             <div class="header-icon">
-              <img data-src="assets/style/img/1.png" class="header-icon-image lazy-loaded" src="assets/style/img/1.png"/>
+              <img data-src="assets/style/img/1.png" class="header-icon-image lazy-loaded" src="assets/style/img/MM-logo.jpg"/>
             </div>
             <div class="header-info">
               <div class="template-company">
-                <h3 class="g-oneline-text g-theme-color-2 info-title">马瑞利</h3>
-                <div class="description"><span>"</span>以科技为导向,追求卓越<span>"</span></div>
+                <h3 class="g-oneline-text g-theme-color-2 info-title">马瑞利中国</h3>
+                <div class="description"><span>"</span>追求卓越 , 你我同行<span>"</span></div>
                 <div class="action">
                   <button ion-button color="light" class=" social-btn first-btn ">
                     关注
@@ -137,34 +135,31 @@
               </div>
             </div>
           </div>
-          <div data-tpl-type="5">
-            <div class="g-card">
-              <div class="template-card" onclick="window.open('http://www.magnetimarelli.com.cn/company', '_self')">
-                <div class="template-survey wider gm-card">
-                  <div class="g-flex template-survey-bg g-theme-bg-1 survey-bg">
-                    <div class="g-column">
-                      <button ion-button light style="border-color: white; background-color: #044199">还想了解更多该企业信息?</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           <div data-tpl-type="51">
             <div class="g-card">
               <div class="template-card">
                 <div class="wider">
-                  <div class="qx-qrcode-bg g-flex g-square-image g-theme-bg-1">
-                    <img data-src="assets/style/img/MarelliQR.jpg" alt="qrcode" class="qx-qrcode lazy-loaded"
-                         src="assets/style/img/MarelliQR.jpg"/>
-                    <div class="qx-qrcode-text"><span class="qx-qrcode-zhiwen">
+                  <div class="qx-qrcode-bg g-flex g-square-image g-theme-bg-1" style="height: 18rem;">
+                    <img data-src="assets/style/img/MarelliQR.jpg" alt="qrcode" class="qx-qrcode lazy-loaded" style="margin-top:  3.14286rem !important;"  src="assets/style/img/MarelliQR.jpg"/>
+
+                    <div class="qx-qrcode-text" style="margin-top: 3px !important;"><span class="qx-qrcode-zhiwen">
               长按关注马瑞利<img data-src="assets/style/img/icon-zhiwen.png" alt="" class="zhiwen lazy-loaded"
                           src="assets/style/img/icon-zhiwen.png"/></span></div>
                     <!--</div>-->
                     <!--</div>-->
+                    <div class="g-column">
+                      <button ion-button light style=" background-color: #044199" onclick="window.open('http://www.magnetimarelli.com.cn/company', '_self')">还想了解更多该企业信息?</button>
+                    </div>
                   </div>
                 </div>
               </div>
+              <!--<div class="template-card" >-->
+              <!--<div class="template-survey wider gm-card">-->
+              <!--<div class="g-flex template-survey-bg g-theme-bg-1 survey-bg">-->
+
+              <!--</div>-->
+              <!--</div>-->
+              <!--</div>-->
             </div>
           </div>
         </div>

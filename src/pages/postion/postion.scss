@@ -42,6 +42,7 @@
 
 .select-box {
   position: relative;
+  background:rgba(0,44,119,0.5) ;
 }
 
 .select-box select {
@@ -184,6 +185,7 @@
   text-align: center;
   overflow: hidden;
   background: #fff;
+  border-bottom: solid 1px #c9c9c9;
 }
 
 .set-category-box .item {

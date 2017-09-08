@@ -1,7 +1,7 @@
 <ion-content>
-  <ion-fab bottom right>
-    <button ion-fab style="background-color: #044199">{{positionName}}</button>
-    <ion-fab-list side="top">
+  <ion-fab right middle>
+    <button ion-fab style="background-color: #044199;border: 2px solid #e3e4e6;">{{positionName}}</button>
+    <ion-fab-list side="left">
       <button ion-fab (click)="homePage()">公司</button>
       <button ion-fab (click)="positionPage(!isSchool)">{{btnName}}</button>
     </ion-fab-list>
@@ -21,9 +21,9 @@
       </div>
     </div>
     <div id="filterDiv" class="set-category-box clear">
-      <ul class="d-box">
-        <li class="flex1 item select-box">
-          <span class="txt bgs bg-arrow-d" id="strDepartment_text">部门</span>
+      <ul class="d-box" style="color:#e3e4e6; ">
+        <li class="flex1 item select-box" style="margin: 0; padding: 3px 0;">
+          <span class="txt bgs bg-arrow-d" id="strDepartment_text" ><ion-icon ios="ios-man" md="ios-man" style="color: #FFDD00; "></ion-icon>&nbsp;&nbsp;部门&nbsp;&nbsp;<ion-icon name="arrow-dropdown" ></ion-icon></span>
           <div id="departmentDiv">
             <select name="strDepartment" id="strDepartment">
               <option value="">全部</option>
@@ -47,8 +47,8 @@
             </select>
           </div>
         </li>
-        <li class="flex1 item select-box">
-          <span class="txt bgs bg-arrow-d" id="positionType_text">业务线</span>
+        <li class="flex1 item select-box" style="margin: 0; padding: 3px 0;">
+          <span class="txt bgs bg-arrow-d" id="positionType_text"><ion-icon ios="ios-build" md="ios-build" style="color: #FFDD00">&nbsp;&nbsp;</ion-icon>业务线&nbsp;&nbsp;<ion-icon name="arrow-dropdown"></ion-icon></span>
           <div id="pclassDiv">
             <select name="positionType" id="positionType">
               <option value="">全部</option>
@@ -63,8 +63,8 @@
             </select>
           </div>
         </li>
-        <li class="flex1 item select-box">
-          <span class="txt bgs bg-arrow-d" id="positionCity_text">地点</span>
+        <li class="flex1 item select-box" style="margin: 0; padding: 3px 0;">
+          <span class="txt bgs bg-arrow-d" style="vertical-align: middle;" id="positionCity_text">  <ion-icon ios="ios-pin" md="ios-pin" style="color: #FFDD00;"></ion-icon>&nbsp;&nbsp;地点&nbsp;&nbsp;<ion-icon name="arrow-dropdown"></ion-icon></span>
           <div id="cityDiv">
             <select name="positionCity" id="positionCity">
               <option value="">全部</option>
@@ -88,7 +88,7 @@
   <div  class="social-job-list">
     <dl class="social-job-content">
       <dd class="category fr c-pm">市场拓展</dd>
-      <dt class="title"><a (click)="detailPage(1)">Hardware Engineer 硬件工程师</a></dt>
+      <dt class="title"><a (click)="detailPage(1)">Hardware Engineer 硬件工程师&nbsp;&nbsp;<ion-icon ios="ios-flame" md="ios-flame" style="color:#B63131; font-size: 1.0em;"></ion-icon></a></dt>
       <dd class="info clear">
         <span class="time fr">2017-08-15</span>
         <div class="to fl area"><span class="icons i-area vm"></span><span class="txt vm">上海</span></div>
@@ -98,7 +98,7 @@
 
     <dl class="social-job-content">
       <dd class="category fr c-pm">技术类</dd>
-      <dt class="title"><a (click)="detailPage(2)">Software Engineer 软件工程师</a></dt>
+      <dt class="title"><a (click)="detailPage(2)">Software Engineer 软件工程师&nbsp;&nbsp;<ion-icon ios="ios-flame" md="ios-flame" style="color:#B63131; font-size: 1.0em;"></ion-icon></a></dt>
       <dd class="info clear">
         <span class="time fr">2017-08-15</span>
         <div class="to fl area"><span class="icons i-area vm"></span><span class="txt vm" >上海</span></div>
@@ -117,7 +117,7 @@
 
     <dl class="social-job-content">
       <dd class="category fr c-pm">技术类</dd>
-      <dt class="title"><a (click)="detailPage(1)">架构治理专家</a></dt>
+      <dt class="title"><a (click)="detailPage(1)">架构治理专家&nbsp;&nbsp;<ion-icon ios="ios-flame" md="ios-flame" style="color:#B63131; font-size: 1.0em;"></ion-icon></a></dt>
       <dd class="info clear">
         <span class="time fr">2017-08-15</span>
         <div class="to fl area"><span class="icons i-area vm"></span><span class="txt vm" >杭州市</span></div>
